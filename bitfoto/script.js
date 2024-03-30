@@ -37,9 +37,9 @@ function openFullscreen(index) {
 
 function showLeftFoto(index) {
   return /*html*/ `
-  <div class="left-arrow-interface" onclick="showFoto(${index - 1})" >
+  <div class="left-arrow-interface no-select" onclick="showFoto(${index - 1})" >
     <img
-      class="left-arrow"
+      class="left-arrow no-select"
       src="/bitfoto/assets/icons/leftArrow.svg"
       alt=""
     />
@@ -49,9 +49,11 @@ function showLeftFoto(index) {
 
 function showRightFoto(index) {
   return /*html*/ `
-  <div class="right-arrow-interface" onclick="showFoto(${index + 1})" >
+  <div class="right-arrow-interface no-select" onclick="showFoto(${
+    index + 1
+  })" >
     <img
-        class="right-arrow"
+        class="right-arrow no-select"
         src="/bitfoto/assets/icons/rightArrow.svg"
         alt=""
     />
@@ -59,7 +61,7 @@ function showRightFoto(index) {
 `;
 }
 
-function closeFullscreen() {
+function closeFullScreen() {
   document.getElementById("fullscreen-bg").classList.add("d-none");
 }
 
