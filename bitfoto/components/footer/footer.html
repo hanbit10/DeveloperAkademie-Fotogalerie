@@ -42,6 +42,10 @@
         text-decoration: underline;
       }
 
+      .copy-right {
+        display: flex;
+      }
+
       @media screen and (max-width: 550px) {
         .copy-right {
           flex-direction: column;
@@ -56,11 +60,13 @@
         <h2>BitFoto</h2>
       </a>
 
-      <div class="copy-right">
+      <div>
         Copyright © 2024
         <br />
-        Site designed by Hanbit Chang.
-        <br />
+        <div class="copy-right">
+          <div>Site designed by&nbsp;</div>
+          <div>Hanbit Chang.</div>
+        </div>
         App icons by <a href="https://icons8.com/">icons8</a>
       </div>
     </div>
