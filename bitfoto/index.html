@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="script.js"></script>
 
-    <link rel="icon" href="/bitfoto/assets/icon1.png" alt="" />
+    <link rel="icon" href="/assets/icon1.png" alt="" />
     <title>BitFoto</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body onload="render()">
-    <header w3-include-html="/bitfoto/components/header/header.html"></header>
+    <header w3-include-html="/components/header/header.html"></header>
 
     <section class="container">
       <div id="content" class="content"></div>
@@ -22,16 +22,11 @@
         <div class="right-arrow-container no-select" id="rightArrow"></div>
 
         <div class="close-container no-select">
-          <img
-            class="close-btn no-select"
-            onclick="closeFullScreen()"
-            src="/bitfoto/assets/icons/icon-x-white.svg"
-            alt=""
-          />
+          <img class="close-btn no-select" onclick="closeFullScreen()" src="/assets/icons/icon-x-white.svg" alt="" />
         </div>
       </div>
     </section>
-    <footer w3-include-html="/bitfoto/components/footer/footer.html"></footer>
+    <footer w3-include-html="/components/footer/footer.html"></footer>
     <script>
       includeHTML();
     </script>

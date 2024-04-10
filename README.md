@@ -2,4 +2,4 @@
 
 # Link
 
-https://hanbit-chang.developerakademie.net/bitfoto/index.html
+https://hanbit-chang.developerakademie.net/index.html

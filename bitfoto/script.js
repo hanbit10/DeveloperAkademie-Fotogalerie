@@ -18,9 +18,7 @@ function render() {
 
   for (let i = 0; i < 20; i++) {
     fotoArray.innerHTML += /*html*/ `
-      <img class="foto-box" id="foto-box-${i + 1}" onclick="openFullscreen(${
-      i + 1
-    })" src="./assets/imgs/${i + 1}.jpg" alt="">
+      <img class="foto-box" id="foto-box-${i + 1}" onclick="openFullscreen(${i + 1})" src="./assets/imgs/${i + 1}.jpg" alt="">
       `;
   }
 }
@@ -40,7 +38,7 @@ function showLeftFoto(index) {
   <div class="left-arrow-interface no-select" onclick="showFoto(${index - 1})" >
     <img
       class="left-arrow no-select"
-      src="/bitfoto/assets/icons/leftArrow.svg"
+      src="/assets/icons/leftArrow.svg"
       alt=""
     />
   </div>
@@ -49,12 +47,10 @@ function showLeftFoto(index) {
 
 function showRightFoto(index) {
   return /*html*/ `
-  <div class="right-arrow-interface no-select" onclick="showFoto(${
-    index + 1
-  })" >
+  <div class="right-arrow-interface no-select" onclick="showFoto(${index + 1})" >
     <img
         class="right-arrow no-select"
-        src="/bitfoto/assets/icons/rightArrow.svg"
+        src="/assets/icons/rightArrow.svg"
         alt=""
     />
   </div>
